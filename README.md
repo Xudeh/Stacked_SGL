@@ -1,7 +1,7 @@
 # Stacked-SGL
 * Stacked SGL uses a machine learning method by combining sparse group lasso and stacking for cancer classification. Users can run program with specified cancer gene expression data. 
 ## Installation
-* It is required to install the following dependencies in order to be able to run the files: For the Stacked SGL method
+* It is required to install the following dependencies in order to be able to run the package: For the Stacked SGL method of the package named Stacked_sgl
 ```
 python >= 3.5
 numpy = 1.18.4
