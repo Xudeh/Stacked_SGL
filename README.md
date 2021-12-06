@@ -10,17 +10,19 @@ joblib = 1.0.0
 scipy >= 1.4.1
 scikit-learn >= 0.23.2
 ```
+You can also clone the repository and do a manual install.
 ```
 git clone https://github.com/huanheaha/Stacked-SGL.git
 python setup.py install
 ```
 # Running the Code
-* Download all the data and code in Stacked-SGL-master to the local address.
-* Open Python editor， then dictory to stacked-SGL-master folder which contains example.py. 
-* Make sure the data and code are in one folder, or enter the exact data address when you run the code.
+* Acquire all the data and code in Stacked-SGL to the local address.
+* Open Python editor,then dictory to stacked-SGL folder which contains example.py. 
+* Make sure the data and code are in one folder,or enter the exact data address when you run the code.
 ## **An example of applying the Stacked SGL is provided in example.py.** <br>
 Running the example in example.py. Specific example including parameter description and parameter selection is provided in this file.
 ```
+from Stacked_sgl.s_sgl import Stacked_SGL
 S_S = Stacked_SGL(x_pos, x_neg,Y_train,X_test,Y_test,n,groups,
                   alpha = alpha_1,lambd = lambd_1,lambd2= lambd_2)
 ```
