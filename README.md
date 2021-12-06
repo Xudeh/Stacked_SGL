@@ -10,6 +10,10 @@ joblib = 1.0.0
 scipy >= 1.4.1
 scikit-learn >= 0.23.2
 ```
+```
+git clone https://github.com/huanheaha/Stacked-SGL.git
+python setup.py install
+```
 # Running the Code
 * Download all the data and code in Stacked-SGL-master to the local address.
 * Open Python editor， then dictory to stacked-SGL-master folder which contains example.py. 
