@@ -39,10 +39,12 @@ Data, Data_test = S_S.Meta(A_L, C_M)
 y_pre, coef, Auc, Acc = S_S.Pre_MRL(Data, Data_test)  
 """ y_pre : classification results of independent test set  
 """      
-![image](https://user-images.githubusercontent.com/52036078/145137945-209d2e16-45b7-4c72-919f-a9cffab85652.png)
-
 ```
 Prediction results will show in the terminal.
+```
+print(y_pre)
+[1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+```
 # Announcements
 * The input data set should be standardized.
 * The csv files of LIHC.csv, THCA.csv and Lung.csv represent the mRNA gene expression data of three cancer genes trained in the model. The LIHC-groups.csv, THCA-groups.csv and Lung-groups.csv include gene pathway information of pathway name and number of genes in the pathway.
