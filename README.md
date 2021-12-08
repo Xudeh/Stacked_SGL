@@ -46,8 +46,8 @@ print(y_pre)
 [1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
 ```
 In addition,some optional parameters are also available:
-```
-*alpha: mixing parameter (default [0.05,0.1])
+
+*```alpha```: mixing parameter (default [0.05,0.1])
 *lambd: regularization parameter of base learners(default {0.01*n|n=1,...,100})
 *lambd2: regularization parameter of meter learners(default {0.0005*n|n=1,...,200}
 *lambd3: regularization parameters  of stacked SGL with post-hoc
