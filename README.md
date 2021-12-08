@@ -25,6 +25,22 @@ Running the example in example.py. Specific example including parameter descript
 from Stacked_sgl.s_sgl import Stacked_SGL
 S_S = Stacked_SGL(x_pos, x_neg,Y_train,X_test,Y_test,n,groups,
                   alpha = alpha_1,lambd = lambd_1,lambd2= lambd_2)
+C_M, A_L = S_S.Base() 
+"""C_M: the training coefficient of the T base learners. 
+   A_L: the optimal lambd and cross-validation sets of AUC
+       and Acc for each alpha. for example [alpha, selected_lambd, auc, acc].
+ """
+Data, Data_test = S_S.Meta(A_L, C_M)
+""" Data: P of the cross-validation set  probability matrix outputing 
+           on the  base learner. n_train * T_base 
+    Data_test: representing the independent test set probability matrix outputing 
+              on the base learner. n_test * T_base
+"""
+y_pre, coef, Auc, Acc = S_S.Pre_MRL(Data, Data_test)  
+""" y_pre : classification results of independent test set  
+"""      
+![image](https://user-images.githubusercontent.com/52036078/145137945-209d2e16-45b7-4c72-919f-a9cffab85652.png)
+
 ```
 Prediction results will show in the terminal.
 # Announcements
