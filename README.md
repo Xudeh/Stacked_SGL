@@ -45,6 +45,15 @@ Prediction results will show in the terminal.
 print(y_pre)
 [1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
 ```
+In addition,some optional parameters are also available:
+```
+alpha:mixing parameter (default [0.05,0.1])
+lambd: regularization parameter of base learners(default {0.01*n|n=1,...,100})
+lambd2:regularization parameter of meter learners(default {0.0005*n|n=1,...,200}
+lambd3:Regularization parameters  of stacked SGL with post-hoc
+       feature selection model
+```
+The parameters can be adjusted according to user requirements.
 # Announcements
 * The input data set should be standardized.
 * The csv files of LIHC.csv, THCA.csv and Lung.csv represent the mRNA gene expression data of three cancer genes trained in the model. The LIHC-groups.csv, THCA-groups.csv and Lung-groups.csv include gene pathway information of pathway name and number of genes in the pathway.
